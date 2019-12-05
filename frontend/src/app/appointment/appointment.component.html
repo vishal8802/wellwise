@@ -1,0 +1,203 @@
+<div id="appoint" style="background-color: #f0f8ff;">
+<div class="container">
+<form >
+  <div class="form-row" >
+    <div class="form-group col-md-5" style="margin-top: 50px;">
+      <input type="text" class="form-control" id="disease" placeholder="Symptoms/Treatment/Doctor/Clinic">
+    </div>
+    <div class="form-group col-md-2" style="margin-top: 50px;">
+      <input type="text" class="form-control" placeholder="Enter City" id="addcity">
+    </div>
+    <div class="form-group col-md-4" style="margin-top: 50px; ">
+         <select id="inputState" class="form-control" style="font-size: 14px;">
+        <option selected>Enter Locality</option>
+        <option>Delhi</option>
+        <option>Gurgaon</option>
+      </select>
+    </div>
+    <div class="form-group col-md-1" style="margin-top: 50px;">
+      <button class="btn btn-primary" value="search">Search</button>
+    </div>
+    
+  </div>
+</form>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Filter</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Locality<br>
+    <input type="checkbox" name="Delhi">Delhi<br>
+    <input type="checkbox" name="dwarka">Dwarka
+  </li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+  </div>
+</div>
+<div class="grid--align-center grid__col-auto lybPad grid--direction-row grid--justify-space-between lybText--small lybText--bolder">
+                      Filter
+                    </div>
+                    <div class="left-panel__filter-panel grid__col-20 " data-ng-if="ctrl.facetDTO &amp;&amp; ctrl.facetDTO.filters &amp;&amp; ctrl.facetDTO.filters.length>0">
+                      <div class="left-panel__filter-panel__filter-block">
+                        <!-- ngRepeat: filter in ctrl.facetDTO.filters --><span ng-repeat="filter in ctrl.facetDTO.filters" class="left-panel__filter-panel__filter-block__sections ng-scope">
+                          <div class="left-panel__filter-panel__filter-block__header lybText--tiny head lybPad-top grid__col-lt-md-7 ng-binding" ng-init="displayName = filter.displayName ; code = filter.code" ng-click="ctrl.filterTitleClick(code)" data-filter-code="LOC" ng-class="(ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])? 'left-panel__selectedTiles':null">
+                            LOCALITY
+                          </div>
+                          <!-- ngIf: !filter.subFilters --><!-- ngInclude: 'shared-templates/srp_filter.tmpl.html' --><div class="grid__col-lt-md-13 left-panel__filter-panel__filter-block__content ng-scope" ng-include="'shared-templates/srp_filter.tmpl.html'" data-ng-if="!filter.subFilters" data-ng-show="!$root.mobile || (ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])" ng-init="isCstmChckbx= (filter.type=='CSTM_CHCKBX'? true : false)"><!-- ngIf: filter.type=='CHCKBX' --><section data-ng-if="filter.type=='CHCKBX'" class="lybMar-top--half ng-scope">
+    <!-- ngIf: filter.code=='LTST' -->
+    <!-- ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="20293" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="New Delhi" id="New Delhi_0">
+        <label for="New Delhi_0" ng-disabled="!value.available" class="ng-binding">New Delhi</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17312" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Dwarka" id="Dwarka_1">
+        <label for="Dwarka_1" ng-disabled="!value.available" class="ng-binding">Dwarka</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17613" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Vasant Kunj" id="Vasant Kunj_2">
+        <label for="Vasant Kunj_2" ng-disabled="!value.available" class="ng-binding">Vasant Kunj</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17510" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Rohini" id="Rohini_3">
+        <label for="Rohini_3" ng-disabled="!value.available" class="ng-binding">Rohini</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17394" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Janakpuri" id="Janakpuri_4">
+        <label for="Janakpuri_4" ng-disabled="!value.available" class="ng-binding">Janakpuri</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17360" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Greater Kailash" id="Greater Kailash_5">
+        <label for="Greater Kailash_5" ng-disabled="!value.available" class="ng-binding">Greater Kailash</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17509" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Rajouri Garden" id="Rajouri Garden_6">
+        <label for="Rajouri Garden_6" ng-disabled="!value.available" class="ng-binding">Rajouri Garden</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17492" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Paschim Vihar" id="Paschim Vihar_7">
+        <label for="Paschim Vihar_7" ng-disabled="!value.available" class="ng-binding">Paschim Vihar</label>
+    </div><!-- end ngRepeat: value in filter.value --><div ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" value="17489" title="LOCALITY" ng-model="value.checked" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="checkbox" ng-disabled="!value.available" name="Okhla" id="Okhla_8">
+        <label for="Okhla_8" ng-disabled="!value.available" class="ng-binding">Okhla</label>
+    </div><!-- end ngRepeat: value in filter.value -->
+</section><!-- end ngIf: filter.type=='CHCKBX' -->
+<!-- ngIf: ctrl.filtersLoaded && filter.type=='SLDR' -->
+<!-- ngIf: filter.type=='RADIO' -->
+<!-- ngIf: filter.type=='CSTM_CHCKBX' -->
+</div><!-- end ngIf: !filter.subFilters -->
+                          <!-- ngIf: filter.subFilters && filter.subFilters.length>0 -->
+                        </span><!-- end ngRepeat: filter in ctrl.facetDTO.filters --><span ng-repeat="filter in ctrl.facetDTO.filters" class="left-panel__filter-panel__filter-block__sections ng-scope">
+                          <div class="left-panel__filter-panel__filter-block__header lybText--tiny head lybPad-top grid__col-lt-md-7 ng-binding" ng-init="displayName = filter.displayName ; code = filter.code" ng-click="ctrl.filterTitleClick(code)" data-filter-code="AVL" ng-class="(ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])? 'left-panel__selectedTiles':null">
+                            AVAILABILITY
+                          </div>
+                          <!-- ngIf: !filter.subFilters -->
+                          <!-- ngIf: filter.subFilters && filter.subFilters.length>0 --><div data-ng-if="filter.subFilters &amp;&amp; filter.subFilters.length>0" data-ng-show="!$root.mobile || (ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])" class="ng-scope">
+                            <div class="grid__col-lt-md-13 left-panel__filter-panel__filter-block__content" ng-init="isCstmChckbx= (ctrl.searchCstm(filter.subFilters) ? true : false) ; subFilters= filter.subFilters">
+                              <!-- ngRepeat: filter in filter.subFilters --><div ng-repeat="filter in filter.subFilters" class="ng-scope">
+                                <!-- ngInclude: 'shared-templates/srp_filter.tmpl.html' --><div ng-include="'shared-templates/srp_filter.tmpl.html'" class="ng-scope"><!-- ngIf: filter.type=='CHCKBX' -->
+<!-- ngIf: ctrl.filtersLoaded && filter.type=='SLDR' -->
+<!-- ngIf: filter.type=='RADIO' --><section data-ng-if="filter.type=='RADIO'" class="lybMar-top--half ng-scope">
+    <!-- ngRepeat: value in filter.value --><!-- ngIf: filter.value && filter.value.length>0 --><div data-ng-if="filter.value &amp;&amp; filter.value.length>0" ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" title="AVAILABILITY" value="td" ng-checked="value.checked" ng-model="filter.radio" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="radio" ng-disabled="!value.available" name="AVAILABILITY" id="Today_0">
+        <label for="Today_0" ng-disabled="!value.available" class="lybText--tiny ng-binding">Today</label>
+    </div><!-- end ngIf: filter.value && filter.value.length>0 --><!-- end ngRepeat: value in filter.value --><!-- ngIf: filter.value && filter.value.length>0 --><div data-ng-if="filter.value &amp;&amp; filter.value.length>0" ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" title="AVAILABILITY" value="n3d" ng-checked="value.checked" ng-model="filter.radio" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="radio" ng-disabled="!value.available" name="AVAILABILITY" id="Next 3 Days_1">
+        <label for="Next 3 Days_1" ng-disabled="!value.available" class="lybText--tiny ng-binding">Next 3 Days</label>
+    </div><!-- end ngIf: filter.value && filter.value.length>0 --><!-- end ngRepeat: value in filter.value -->
+</section><!-- end ngIf: filter.type=='RADIO' -->
+<!-- ngIf: filter.type=='CSTM_CHCKBX' -->
+</div>
+                              </div><!-- end ngRepeat: filter in filter.subFilters --><div ng-repeat="filter in filter.subFilters" class="ng-scope">
+                                <!-- ngInclude: 'shared-templates/srp_filter.tmpl.html' --><div ng-include="'shared-templates/srp_filter.tmpl.html'" class="ng-scope"><!-- ngIf: filter.type=='CHCKBX' -->
+<!-- ngIf: ctrl.filtersLoaded && filter.type=='SLDR' -->
+<!-- ngIf: filter.type=='RADIO' -->
+<!-- ngIf: filter.type=='CSTM_CHCKBX' --><section data-ng-if="filter.type=='CSTM_CHCKBX'" class="lybMar-top-btm ng-scope">
+    <div card="" class="grid grid__col-20 grid--direction-row lybMar-top-btm lybMar-btm left-panel__date-selector">
+        <div class=" grid__col-auto grid--align-center lybCursor--pointer">
+            <input type="checkbox" value="anyDay_cstm" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-not-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="ctrl.anyDay[code]" id="AVL_any">
+            <label for="AVL_any" class="grid--justify-center">Any</label>
+        </div>
+        <!-- ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="0" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="S" id="S_0">
+            <label for="S_0" class="grid--justify-center ng-binding" ng-disabled="!value.available">S</label>
+        </div><!-- end ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="1" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="M" id="M_1">
+            <label for="M_1" class="grid--justify-center ng-binding" ng-disabled="!value.available">M</label>
+        </div><!-- end ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="2" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="T" id="T_2">
+            <label for="T_2" class="grid--justify-center ng-binding" ng-disabled="!value.available">T</label>
+        </div><!-- end ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="3" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="W" id="W_3">
+            <label for="W_3" class="grid--justify-center ng-binding" ng-disabled="!value.available">W</label>
+        </div><!-- end ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="4" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="T" id="T_4">
+            <label for="T_4" class="grid--justify-center ng-binding" ng-disabled="!value.available">T</label>
+        </div><!-- end ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="5" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="F" id="F_5">
+            <label for="F_5" class="grid--justify-center ng-binding" ng-disabled="!value.available">F</label>
+        </div><!-- end ngRepeat: value in filter.value --><div class="grid__col-auto grid--align-center lybCursor--pointer ng-scope" ng-repeat="value in filter.value">
+            <input type="checkbox" value="6" class="left-panel__display-none ng-pristine ng-untouched ng-valid ng-empty" title="AVAILABILITY" ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" ng-model="value.checked" ng-disabled="!value.available" name="S" id="S_6">
+            <label for="S_6" class="grid--justify-center ng-binding" ng-disabled="!value.available">S</label>
+        </div><!-- end ngRepeat: value in filter.value -->
+    </div>
+</section><!-- end ngIf: filter.type=='CSTM_CHCKBX' -->
+</div>
+                              </div><!-- end ngRepeat: filter in filter.subFilters -->
+                            </div>
+                          </div><!-- end ngIf: filter.subFilters && filter.subFilters.length>0 -->
+                        </span><!-- end ngRepeat: filter in ctrl.facetDTO.filters --><span ng-repeat="filter in ctrl.facetDTO.filters" class="left-panel__filter-panel__filter-block__sections ng-scope">
+                          <div class="left-panel__filter-panel__filter-block__header lybText--tiny head lybPad-top grid__col-lt-md-7 ng-binding" ng-init="displayName = filter.displayName ; code = filter.code" ng-click="ctrl.filterTitleClick(code)" data-filter-code="INPF" ng-class="(ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])? 'left-panel__selectedTiles':null">
+                            CLINIC FEES
+                          </div>
+                          <!-- ngIf: !filter.subFilters --><!-- ngInclude: 'shared-templates/srp_filter.tmpl.html' --><div class="grid__col-lt-md-13 left-panel__filter-panel__filter-block__content ng-scope" ng-include="'shared-templates/srp_filter.tmpl.html'" data-ng-if="!filter.subFilters" data-ng-show="!$root.mobile || (ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])" ng-init="isCstmChckbx= (filter.type=='CSTM_CHCKBX'? true : false)"><!-- ngIf: filter.type=='CHCKBX' -->
+<!-- ngIf: ctrl.filtersLoaded && filter.type=='SLDR' --><section data-ng-if="ctrl.filtersLoaded &amp;&amp; filter.type=='SLDR'" class="lybMar-top--half ng-scope">
+    <!-- ngIf: filter.range --><div class="content ng-scope" data-ng-if="filter.range">
+        <div class="left-panel__rangeWidth rzslider ng-isolate-scope" type="filter" min-value="0" max-value="1000" rz-slider-model="filter.range.minValue" rz-slider-high="filter.range.maxValue" rz-slider-options="ctrl.sliderOptions(filter,displayName,code)">
+<span class="rz-bar-wrapper"><span class="rz-bar"></span></span> <!-- // 0 The slider bar -->
+<span class="rz-bar-wrapper" style="visibility: visible; width: 0px; left: 0px;">
+  <span class="rz-bar rz-selection" ng-style="barStyle"></span>
+</span> <!-- // 1 Highlight between two handles -->
+<span class="rz-pointer rz-pointer-min" ng-style="minPointerStyle" role="slider" aria-valuenow="0" aria-valuetext="0" aria-valuemin="0" aria-valuemax="1000" tabindex="0" style="left: 0px;"></span> <!-- // 2 Left slider handle -->
+<span class="rz-pointer rz-pointer-max" ng-style="maxPointerStyle" aria-valuenow="1000" aria-valuetext="1000" aria-valuemin="0" aria-valuemax="1000" role="slider" tabindex="0" style="left: 0px;"></span> <!-- // 3 Right slider handle -->
+<span hide="" class="rz-bubble rz-limit rz-floor" style="visibility: hidden; left: 0px;">0</span> <!-- // 4 Floor label -->
+<span hide="" class="rz-bubble rz-limit rz-ceil" style="visibility: hidden; left: 0px;">1000</span> <!-- // 5 Ceiling label -->
+<span hide="" class="rz-bubble" style="visibility: hidden; left: 0px;">0</span> <!-- // 6 Label above left slider handle -->
+<span hide="" class="rz-bubble" style="visibility: hidden; left: 0px;">1000</span> <!-- // 7 Label above right slider handle -->
+<span hide="" class="rz-bubble" style="visibility: visible; left: 0px;">0 - 1000</span> <!-- // 8 Range label when the slider handles are close ex. 15 - 17 -->
+<ul ng-show="showTicks" class="rz-ticks ng-hide"> <!-- // 9 The ticks -->
+  <!-- ngRepeat: t in ticks track by $index -->
+</ul>
+</div>
+        <!-- ngIf: (!filter.range.minValue || filter.range.minValue==0) --><div data-ng-if="(!filter.range.minValue || filter.range.minValue==0)" class="lybMar-btm grid__col-20 grid--justify-center ng-binding ng-scope">
+            Free - ₹1000+
+        </div><!-- end ngIf: (!filter.range.minValue || filter.range.minValue==0) -->
+        <!-- ngIf: (filter.range.minValue && filter.range.minValue!=0) && filter.range.maxValue -->
+    </div><!-- end ngIf: filter.range -->
+</section><!-- end ngIf: ctrl.filtersLoaded && filter.type=='SLDR' -->
+<!-- ngIf: filter.type=='RADIO' -->
+<!-- ngIf: filter.type=='CSTM_CHCKBX' -->
+</div><!-- end ngIf: !filter.subFilters -->
+                          <!-- ngIf: filter.subFilters && filter.subFilters.length>0 -->
+                        </span><!-- end ngRepeat: filter in ctrl.facetDTO.filters --><span ng-repeat="filter in ctrl.facetDTO.filters" class="left-panel__filter-panel__filter-block__sections ng-scope">
+                          <div class="left-panel__filter-panel__filter-block__header lybText--tiny head lybPad-top grid__col-lt-md-7 ng-binding" ng-init="displayName = filter.displayName ; code = filter.code" ng-click="ctrl.filterTitleClick(code)" data-filter-code="GN" ng-class="(ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])? 'left-panel__selectedTiles':null">
+                            GENDER
+                          </div>
+                          <!-- ngIf: !filter.subFilters --><!-- ngInclude: 'shared-templates/srp_filter.tmpl.html' --><div class="grid__col-lt-md-13 left-panel__filter-panel__filter-block__content ng-scope" ng-include="'shared-templates/srp_filter.tmpl.html'" data-ng-if="!filter.subFilters" data-ng-show="!$root.mobile || (ctrl.showFilterType &amp;&amp; ctrl.showFilterType[code])" ng-init="isCstmChckbx= (filter.type=='CSTM_CHCKBX'? true : false)"><!-- ngIf: filter.type=='CHCKBX' -->
+<!-- ngIf: ctrl.filtersLoaded && filter.type=='SLDR' -->
+<!-- ngIf: filter.type=='RADIO' --><section data-ng-if="filter.type=='RADIO'" class="lybMar-top--half ng-scope">
+    <!-- ngRepeat: value in filter.value --><!-- ngIf: filter.value && filter.value.length>0 --><div data-ng-if="filter.value &amp;&amp; filter.value.length>0" ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" title="GENDER" value="ag" ng-checked="value.checked" ng-model="filter.radio" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="radio" ng-disabled="!value.available" name="GENDER" id="Any Gender_0" checked="checked">
+        <label for="Any Gender_0" ng-disabled="!value.available" class="lybText--tiny ng-binding">Any Gender</label>
+    </div><!-- end ngIf: filter.value && filter.value.length>0 --><!-- end ngRepeat: value in filter.value --><!-- ngIf: filter.value && filter.value.length>0 --><div data-ng-if="filter.value &amp;&amp; filter.value.length>0" ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" title="GENDER" value="ml" ng-checked="value.checked" ng-model="filter.radio" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="radio" ng-disabled="!value.available" name="GENDER" id="Male_1">
+        <label for="Male_1" ng-disabled="!value.available" class="lybText--tiny ng-binding">Male</label>
+    </div><!-- end ngIf: filter.value && filter.value.length>0 --><!-- end ngRepeat: value in filter.value --><!-- ngIf: filter.value && filter.value.length>0 --><div data-ng-if="filter.value &amp;&amp; filter.value.length>0" ng-repeat="value in filter.value" class="content ng-scope">
+        <input ng-click="ctrl.filterSRPList($event,code,isCstmChckbx,subFilters)" title="GENDER" value="fe" ng-checked="value.checked" ng-model="filter.radio" class="lybMar-top-btm--half ng-pristine ng-untouched ng-valid ng-empty" type="radio" ng-disabled="!value.available" name="GENDER" id="Female_2">
+        <label for="Female_2" ng-disabled="!value.available" class="lybText--tiny ng-binding">Female</label>
+    </div><!-- end ngIf: filter.value && filter.value.length>0 --><!-- end ngRepeat: value in filter.value -->
+</section><!-- end ngIf: filter.type=='RADIO' -->
+<!-- ngIf: filter.type=='CSTM_CHCKBX' -->
+</div><!-- end ngIf: !filter.subFilters -->
+                          <!-- ngIf: filter.subFilters && filter.subFilters.length>0 -->
+                        </span><!-- end ngRepeat: filter in ctrl.facetDTO.filters -->
+                      </div>
+                    </div>
+</div>
+</div>

@@ -1,0 +1,108 @@
+<div class="row">
+  <div class="col-md-12 col-lg-3 col-xxxl-3">
+    <div class="dropdown ghost-dropdown" ngbDropdown>
+      <button class="btn btn-primary" type="button" ngbDropdownToggle>
+        {{ dropdown_btn_text }}
+      </button>
+      <ul class="dropdown-menu" ngbDropdownMenu>
+        <li (click)="orderByCat('all')" class="dropdown-item">All</li>
+        <li
+          *ngFor="let c of categories"
+          (click)="orderByCat(c)"
+          class="dropdown-item"
+        >
+          {{ c.name }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="lists row">
+  <div class="col-md-12 col-lg-3 col-xxxl-3">
+    <nb-card class="list-card">
+      <nb-card-header>BLOGS</nb-card-header>
+      <nb-card-body>
+        <nb-list>
+          <nb-list-item
+            *ngFor="let blog of new_blog"
+            (click)="setCurrentBlog($event)"
+          >
+            {{ blog.topic }}
+          </nb-list-item>
+        </nb-list>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div *ngIf="ins" (click)="showAddButton()" class="col-lg-9 col-xxxl-9">
+    <nb-card style="text-align: center">
+      <h1>{{ current_blog[0].topic | uppercase }}</h1>
+    </nb-card>
+  </div>
+
+  <div *ngIf="editenabled" class="col-lg-9 col-xxxl-9">
+    <button (click)="convertToForm()" class="btn-sm btn btn-info">
+      EDIT
+    </button>
+
+    <nb-card style="text-align: center">
+      <h1>{{ current_blog[0].topic | uppercase }}</h1>
+    </nb-card>
+    <nb-card
+      class="list-card"
+      *ngFor="let h of current_headings; let i = index"
+    >
+      <nb-card-header>
+        {{ h | uppercase }}
+      </nb-card-header>
+      <nb-card-body>
+        <p>{{ current_blog[0].content[i] }}</p>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-lg-9 col-xxxl-9">
+    <nb-card *ngIf="formshow">
+      <nb-card-body>
+        <div class="form-group row">
+          <label for="inputTopic" class="col-sm-3 col-form-label">TOPIC</label>
+          <div class="col-sm-9">
+            <input
+              [(ngModel)]="model_blog.topic"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <div *ngFor="let c of model_blog.heading; let i = index">
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">HEADING {{ i }}</label>
+            <div class="col-sm-9">
+              <input
+                [(ngModel)]="model_blog.heading[i]"
+                type="text"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label class="col-sm-3">CONTENT</label>
+            <div class="col-sm-9">
+              <textarea
+                class="form-control"
+                [(ngModel)]="model_blog.content[i]"
+                rows="8"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </nb-card-body>
+      <button (click)="updateBlog(model_blog)" class="btn btn-info btn-sm">
+        Save
+      </button>
+    </nb-card>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.d-block{
+	height: 600px;
+	widows: 500px;
+	opacity: 0.5;
+}
+
+.slide-wrapper{display:inline;}
+.slide-wrapper .container{padding:0;}
+
+.carousel-caption{
+	align-items: center;
+	margin-bottom: 100px;
+	color: black;
+	
+}
+.img-top{
+	height: 40px !important;
+	width: 150px;
+}
+
+.img2-top{
+	height: 40px !important;
+	width: 150px;
+}
+p{
+	font-size: 20px;
+}
+
+h5{
+	font-size: 30px;
+}
+
+.img-top:hover{
+	opacity:0.8;
+}
+
+.img2-top:hover{
+	opacity: 0.8;
+}
+

@@ -1,0 +1,280 @@
+<nb-card>
+  <nb-card-header>
+    non-verified Doctors
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table
+      [settings]="settings"
+      [source]="source"
+      (deleteConfirm)="onDeleteConfirm($event)"
+    >
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+
+<nb-card>
+  <nb-card-header>Add a Doctor</nb-card-header>
+  <nb-card-body>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="doctor_title">Title</label>
+
+          <select
+            [(ngModel)]="doctor.title"
+            class="form-control"
+            id="doctor_title"
+          >
+            <option value="Dr">Dr</option>
+            <option value="Dt">Dt</option>
+            <option value="Mr">Mr</option>
+            <option value="Ms">Ms</option>
+            <option value="Mrs">Mrs</option>
+            <option value="OD">OD</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputEmail">Registration No.</label>
+          <div class="input-group">
+            <input
+              (keypress)="numberOnly($event)"
+              [(ngModel)]="doctor.reg_no"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input
+            (keypress)="alphabetOnly($event)"
+            [(ngModel)]="doctor.name"
+            type="text"
+            class="form-control"
+            id="inputName"
+            placeholder="Full Name"
+          />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input
+            type="text"
+            [(ngModel)]="doctor.email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="Email"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputPhone">Phone</label>
+          <input
+            type="text"
+            (keypress)="numberOnly($event)"
+            [(ngModel)]="doctor.phone"
+            class="form-control"
+            id="inputPhone"
+            placeholder="Phone Number"
+          />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputWebsite">Specialization</label>
+          <ng-multiselect-dropdown
+            [placeholder]="'Select Specializations'"
+            [data]="dropdownList"
+            [(ngModel)]="specialization"
+            [settings]="dropdownSettings"
+            (onSelect)="onItemSelect($event)"
+            (onDeSelect)="removeSpecs($event)"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputPassword">Password</label>
+          <input
+            type="password"
+            [(ngModel)]="doctor.password"
+            class="form-control"
+            id="inputPassword"
+            placeholder="Enter a password"
+          />
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="inputrepassword">Re-enter Password</label>
+          <input
+            [(ngModel)]="doctor.repassword"
+            type="password"
+            class="form-control"
+            id="inputrepassword"
+            placeholder="Re-enter password"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputGender">Gender</label>
+          <select class="form-control" [(ngModel)]="doctor.gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputFees">Fees</label>
+          <div class="input-group">
+            <input
+              [(ngModel)]="doctor.charges"
+              (keypress)="numberOnly($event)"
+              type="text"
+              class="form-control"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text"> R </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputEmail">Experience</label>
+          <div class="input-group">
+            <input
+              [(ngModel)]="doctor.experience"
+              (keypress)="numberOnly($event)"
+              type="text"
+              class="form-control"
+            />
+            <div class="input-group-append">
+              <span class="input-group-text"> Years </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="input">Days Available</label>
+          <ng-multiselect-dropdown
+            [placeholder]="'Select Days'"
+            [data]="weekList"
+            [settings]="dropdownSettings_noSearch"
+            (onSelect)="addWeek($event)"
+            (onDeSelect)="removeWeek($event)"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+      </div>
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4"></div>
+    </div>
+
+    <div class="row" *ngIf="selectedDay.length != 0">
+      <div class="col-md-6">
+        <p>Select Time Slots</p>
+
+        <div class="form-group row" *ngFor="let day of selectedDay">
+          <label class="col-sm-3 col-form-label">{{ day.name }}</label>
+          <ng-multiselect-dropdown
+            [placeholder]="'Select Time'"
+            [data]="timelist"
+            [settings]="dropdownSettings_noSearch"
+            (onSelect)="addTime($event, day._id - 1)"
+            (onDeSelect)="removeTime($event, day._id - 1)"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <label for="inputAddress1">Address Line 1</label>
+          <input
+            type="text"
+            [(ngModel)]="doctor.address_line1"
+            class="form-control"
+            id="inputAddress1"
+            placeholder="Enter Address Line 1"
+          />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputWebsite">State</label>
+          <select
+            [(ngModel)]="doctor.address_state"
+            class="form-control"
+            id="doctor_title"
+          >
+            <option *ngFor="let state of state_list">{{ state }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputWebsite">City</label>
+          <input
+            [(ngModel)]="doctor.address_city"
+            (keypress)="alphabetOnly($event)"
+            type="text"
+            class="form-control"
+            id="city"
+            placeholder="Enter City"
+          />
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="inputWebsite">Zipcode</label>
+          <input
+            [(ngModel)]="doctor.address_zipcode"
+            (keypress)="numberOnly($event)"
+            type="text"
+            class="form-control"
+            id="zip"
+            placeholder="Enter Zipcode"
+          />
+        </div>
+      </div>
+    </div>
+    <nb-alert *ngFor="let alert of alertMsg">
+      {{ alert }}
+    </nb-alert>
+    <button type="button" (click)="add_doctor(doctor)" class="btn btn-primary">
+      Add Doctor
+    </button>
+  </nb-card-body>
+</nb-card>

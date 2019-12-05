@@ -1,0 +1,57 @@
+<div class="lists row">
+  <div class="col-md-12 col-lg-6 col-xxxl-6">
+    <nb-card class="list-card">
+      <nb-card-header>Doctors Specializations</nb-card-header>
+      <nb-card-body>
+        <nb-list>
+          <nb-list-item *ngFor="let s of sorted_specs">
+            {{ s }}
+
+            <i
+              (click)="open_confirmation(s)"
+              style="float: right"
+              class="fas fa-trash-alt danger pl-4"
+            ></i>
+            <i
+              (click)="editCat(s)"
+              style="float: right"
+              class=" fas fa-edit pl-4"
+            ></i>
+          </nb-list-item>
+        </nb-list>
+      </nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="col-md-6  col-lg-6 col-xxxl-6">
+    <nb-card>
+      <nb-card-header>Add Specialization</nb-card-header>
+      <nb-card-body>
+        <form>
+          <div class="form-group row">
+            <label class="col-sm-3 col-form-label">Specialization</label>
+            <div class="col-sm-9">
+              <input
+                type="text"
+                [(ngModel)]="specs_name"
+                [ngModelOptions]="{ standalone: true }"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-9">
+              <button
+                (click)="addSpecs(specs_name)"
+                class="btn btn-sm btn-info"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

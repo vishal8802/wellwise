@@ -1,0 +1,471 @@
+  <option value="AL">+355 (AL)</option>
+                                                        
+                                                            <option value="DZ">+213 (DZ)</option>
+                                                        
+                                                            <option value="AS">+1684 (AS)</option>
+                                                        
+                                                            <option value="AD">+376 (AD)</option>
+                                                        
+                                                            <option value="AO">+244 (AO)</option>
+                                                        
+                                                            <option value="AI">+1264 (AI)</option>
+                                                        
+                                                            <option value="AQ">+672 (AQ)</option>
+                                                        
+                                                            <option value="AG">+1268 (AG)</option>
+                                                        
+                                                            <option value="AR">+54 (AR)</option>
+                                                        
+                                                            <option value="AM">+374 (AM)</option>
+                                                        
+                                                            <option value="AW">+297 (AW)</option>
+                                                        
+                                                            <option value="AU">+61 (AU)</option>
+                                                        
+                                                            <option value="AT">+43 (AT)</option>
+                                                        
+                                                            <option value="AZ">+994 (AZ)</option>
+                                                        
+                                                            <option value="BS">+1242 (BS)</option>
+                                                        
+                                                            <option value="BH">+973 (BH)</option>
+                                                        
+                                                            <option value="BD">+880 (BD)</option>
+                                                        
+                                                            <option value="BB">+1246 (BB)</option>
+                                                        
+                                                            <option value="BY">+375 (BY)</option>
+                                                        
+                                                            <option value="BE">+32 (BE)</option>
+                                                        
+                                                            <option value="BZ">+501 (BZ)</option>
+                                                        
+                                                            <option value="BJ">+229 (BJ)</option>
+                                                        
+                                                            <option value="BM">+1441 (BM)</option>
+                                                        
+                                                            <option value="BT">+975 (BT)</option>
+                                                        
+                                                            <option value="BO">+591 (BO)</option>
+                                                        
+                                                            <option value="BA">+387 (BA)</option>
+                                                        
+                                                            <option value="BW">+267 (BW)</option>
+                                                        
+                                                            <option value="BR">+55 (BR)</option>
+                                                        
+                                                            <option value="IO">+246 (IO)</option>
+                                                        
+                                                            <option value="BN">+673 (BN)</option>
+                                                        
+                                                            <option value="BG">+359 (BG)</option>
+                                                        
+                                                            <option value="BF">+226 (BF)</option>
+                                                        
+                                                            <option value="BI">+257 (BI)</option>
+                                                        
+                                                            <option value="KH">+855 (KH)</option>
+                                                        
+                                                            <option value="CM">+237 (CM)</option>
+                                                        
+                                                            <option value="CA">+1 (CA)</option>
+                                                        
+                                                            <option value="CV">+238 (CV)</option>
+                                                        
+                                                            <option value="BQ">+599 (BQ)</option>
+                                                        
+                                                            <option value="KY">+1345 (KY)</option>
+                                                        
+                                                            <option value="CF">+236 (CF)</option>
+                                                        
+                                                            <option value="TD">+235 (TD)</option>
+                                                        
+                                                            <option value="CL">+56 (CL)</option>
+                                                        
+                                                            <option value="CN">+86 (CN)</option>
+                                                        
+                                                            <option value="CX">+6189 (CX)</option>
+                                                        
+                                                            <option value="CO">+57 (CO)</option>
+                                                        
+                                                            <option value="KM">+269 (KM)</option>
+                                                        
+                                                            <option value="CG">+242 (CG)</option>
+                                                        
+                                                            <option value="CD">+243 (CD)</option>
+                                                        
+                                                            <option value="CK">+682 (CK)</option>
+                                                        
+                                                            <option value="CR">+506 (CR)</option>
+                                                        
+                                                            <option value="HR">+385 (HR)</option>
+                                                        
+                                                            <option value="CU">+53 (CU)</option>
+                                                        
+                                                            <option value="CW">+5999 (CW)</option>
+                                                        
+                                                            <option value="CY">+357 (CY)</option>
+                                                        
+                                                            <option value="CZ">+420 (CZ)</option>
+                                                        
+                                                            <option value="CI">+225 (CI)</option>
+                                                        
+                                                            <option value="DK">+45 (DK)</option>
+                                                        
+                                                            <option value="DJ">+253 (DJ)</option>
+                                                        
+                                                            <option value="DM">+1767 (DM)</option>
+                                                        
+                                                            <option value="DO">+1 (DO)</option>
+                                                        
+                                                            <option value="EC">+593 (EC)</option>
+                                                        
+                                                            <option value="EG">+20 (EG)</option>
+                                                        
+                                                            <option value="SV">+503 (SV)</option>
+                                                        
+                                                            <option value="GQ">+240 (GQ)</option>
+                                                        
+                                                            <option value="ER">+291 (ER)</option>
+                                                        
+                                                            <option value="EE">+372 (EE)</option>
+                                                        
+                                                            <option value="ET">+251 (ET)</option>
+                                                        
+                                                            <option value="FK">+500 (FK)</option>
+                                                        
+                                                            <option value="FO">+298 (FO)</option>
+                                                        
+                                                            <option value="FJ">+679 (FJ)</option>
+                                                        
+                                                            <option value="FI">+358 (FI)</option>
+                                                        
+                                                            <option value="FR">+33 (FR)</option>
+                                                        
+                                                            <option value="GF">+594 (GF)</option>
+                                                        
+                                                            <option value="PF">+689 (PF)</option>
+                                                        
+                                                            <option value="GA">+241 (GA)</option>
+                                                        
+                                                            <option value="GM">+220 (GM)</option>
+                                                        
+                                                            <option value="GE">+995 (GE)</option>
+                                                        
+                                                            <option value="DE">+49 (DE)</option>
+                                                        
+                                                            <option value="GH">+233 (GH)</option>
+                                                        
+                                                            <option value="GI">+350 (GI)</option>
+                                                        
+                                                            <option value="GR">+30 (GR)</option>
+                                                        
+                                                            <option value="GL">+299 (GL)</option>
+                                                        
+                                                            <option value="GD">+1473 (GD)</option>
+                                                        
+                                                            <option value="GP">+590 (GP)</option>
+                                                        
+                                                            <option value="GU">+1671 (GU)</option>
+                                                        
+                                                            <option value="GT">+502 (GT)</option>
+                                                        
+                                                            <option value="GN">+224 (GN)</option>
+                                                        
+                                                            <option value="GW">+245 (GW)</option>
+                                                        
+                                                            <option value="GY">+592 (GY)</option>
+                                                        
+                                                            <option value="HT">+509 (HT)</option>
+                                                        
+                                                            <option value="HN">+504 (HN)</option>
+                                                        
+                                                            <option value="HK">+852 (HK)</option>
+                                                        
+                                                            <option value="HU">+36 (HU)</option>
+                                                        
+                                                            <option value="IS">+354 (IS)</option>
+                                                        
+                                                            <option value="IN" selected="selected">+91 (IN)</option>
+                                                        
+                                                            <option value="ID">+62 (ID)</option>
+                                                        
+                                                            <option value="IR">+98 (IR)</option>
+                                                        
+                                                            <option value="IQ">+964 (IQ)</option>
+                                                        
+                                                            <option value="IE">+353 (IE)</option>
+                                                        
+                                                            <option value="IL">+972 (IL)</option>
+                                                        
+                                                            <option value="IT">+39 (IT)</option>
+                                                        
+                                                            <option value="JM">+1876 (JM)</option>
+                                                        
+                                                            <option value="JP">+81 (JP)</option>
+                                                        
+                                                            <option value="JO">+962 (JO)</option>
+                                                        
+                                                            <option value="KZ">+7 (KZ)</option>
+                                                        
+                                                            <option value="KE">+254 (KE)</option>
+                                                        
+                                                            <option value="KI">+686 (KI)</option>
+                                                        
+                                                            <option value="KW">+965 (KW)</option>
+                                                        
+                                                            <option value="KG">+996 (KG)</option>
+                                                        
+                                                            <option value="LA">+856 (LA)</option>
+                                                        
+                                                            <option value="LV">+371 (LV)</option>
+                                                        
+                                                            <option value="LB">+961 (LB)</option>
+                                                        
+                                                            <option value="LS">+266 (LS)</option>
+                                                        
+                                                            <option value="LR">+231 (LR)</option>
+                                                        
+                                                            <option value="LY">+218 (LY)</option>
+                                                        
+                                                            <option value="LI">+423 (LI)</option>
+                                                        
+                                                            <option value="LT">+370 (LT)</option>
+                                                        
+                                                            <option value="LU">+352 (LU)</option>
+                                                        
+                                                            <option value="MO">+853 (MO)</option>
+                                                        
+                                                            <option value="MK">+389 (MK)</option>
+                                                        
+                                                            <option value="MG">+261 (MG)</option>
+                                                        
+                                                            <option value="MW">+265 (MW)</option>
+                                                        
+                                                            <option value="MY">+60 (MY)</option>
+                                                        
+                                                            <option value="MV">+960 (MV)</option>
+                                                        
+                                                            <option value="ML">+223 (ML)</option>
+                                                        
+                                                            <option value="MT">+356 (MT)</option>
+                                                        
+                                                            <option value="MH">+692 (MH)</option>
+                                                        
+                                                            <option value="MQ">+596 (MQ)</option>
+                                                        
+                                                            <option value="MR">+222 (MR)</option>
+                                                        
+                                                            <option value="MU">+230 (MU)</option>
+                                                        
+                                                            <option value="MX">+52 (MX)</option>
+                                                        
+                                                            <option value="FM">+691 (FM)</option>
+                                                        
+                                                            <option value="MD">+373 (MD)</option>
+                                                        
+                                                            <option value="MC">+377 (MC)</option>
+                                                        
+                                                            <option value="MN">+976 (MN)</option>
+                                                        
+                                                            <option value="ME">+382 (ME)</option>
+                                                        
+                                                            <option value="MS">+1664 (MS)</option>
+                                                        
+                                                            <option value="MA">+212 (MA)</option>
+                                                        
+                                                            <option value="MZ">+258 (MZ)</option>
+                                                        
+                                                            <option value="MM">+95 (MM)</option>
+                                                        
+                                                            <option value="NA">+264 (NA)</option>
+                                                        
+                                                            <option value="NR">+674 (NR)</option>
+                                                        
+                                                            <option value="NP">+977 (NP)</option>
+                                                        
+                                                            <option value="NL">+31 (NL)</option>
+                                                        
+                                                            <option value="NC">+687 (NC)</option>
+                                                        
+                                                            <option value="NZ">+64 (NZ)</option>
+                                                        
+                                                            <option value="NI">+505 (NI)</option>
+                                                        
+                                                            <option value="NE">+227 (NE)</option>
+                                                        
+                                                            <option value="NG">+234 (NG)</option>
+                                                        
+                                                            <option value="NU">+683 (NU)</option>
+                                                        
+                                                            <option value="NF">+6723 (NF)</option>
+                                                        
+                                                            <option value="KP">+850 (KP)</option>
+                                                        
+                                                            <option value="MP">+1670 (MP)</option>
+                                                        
+                                                            <option value="NO">+47 (NO)</option>
+                                                        
+                                                            <option value="OM">+968 (OM)</option>
+                                                        
+                                                            <option value="PK">+92 (PK)</option>
+                                                        
+                                                            <option value="PW">+680 (PW)</option>
+                                                        
+                                                            <option value="PS">+970 (PS)</option>
+                                                        
+                                                            <option value="PA">+507 (PA)</option>
+                                                        
+                                                            <option value="PG">+675 (PG)</option>
+                                                        
+                                                            <option value="PY">+595 (PY)</option>
+                                                        
+                                                            <option value="PE">+51 (PE)</option>
+                                                        
+                                                            <option value="PH">+63 (PH)</option>
+                                                        
+                                                            <option value="PN">+872 (PN)</option>
+                                                        
+                                                            <option value="PL">+48 (PL)</option>
+                                                        
+                                                            <option value="PT">+351 (PT)</option>
+                                                        
+                                                            <option value="PR">+1 (PR)</option>
+                                                        
+                                                            <option value="QA">+974 (QA)</option>
+                                                        
+                                                            <option value="RE">+262 (RE)</option>
+                                                        
+                                                            <option value="RO">+40 (RO)</option>
+                                                        
+                                                            <option value="RU">+7 (RU)</option>
+                                                        
+                                                            <option value="RW">+250 (RW)</option>
+                                                        
+                                                            <option value="BL">+590 (BL)</option>
+                                                        
+                                                            <option value="SH">+290 (SH)</option>
+                                                        
+                                                            <option value="KN">+1869 (KN)</option>
+                                                        
+                                                            <option value="LC">+1758 (LC)</option>
+                                                        
+                                                            <option value="VC">+1784 (VC)</option>
+                                                        
+                                                            <option value="MF">+590 (MF)</option>
+                                                        
+                                                            <option value="WS">+685 (WS)</option>
+                                                        
+                                                            <option value="SM">+378 (SM)</option>
+                                                        
+                                                            <option value="ST">+239 (ST)</option>
+                                                        
+                                                            <option value="SA">+966 (SA)</option>
+                                                        
+                                                            <option value="SN">+221 (SN)</option>
+                                                        
+                                                            <option value="RS">+381 (RS)</option>
+                                                        
+                                                            <option value="SC">+248 (SC)</option>
+                                                        
+                                                            <option value="SL">+232 (SL)</option>
+                                                        
+                                                            <option value="SG">+65 (SG)</option>
+                                                        
+                                                            <option value="SX">+1721 (SX)</option>
+                                                        
+                                                            <option value="SK">+421 (SK)</option>
+                                                        
+                                                            <option value="SI">+386 (SI)</option>
+                                                        
+                                                            <option value="SB">+677 (SB)</option>
+                                                        
+                                                            <option value="SO">+252 (SO)</option>
+                                                        
+                                                            <option value="ZA">+27 (ZA)</option>
+                                                        
+                                                            <option value="KR">+82 (KR)</option>
+                                                        
+                                                            <option value="SS">+211 (SS)</option>
+                                                        
+                                                            <option value="ES">+34 (ES)</option>
+                                                        
+                                                            <option value="LK">+94 (LK)</option>
+                                                        
+                                                            <option value="PM">+508 (PM)</option>
+                                                        
+                                                            <option value="SD">+249 (SD)</option>
+                                                        
+                                                            <option value="SR">+597 (SR)</option>
+                                                        
+                                                            <option value="SJ">+4779 (SJ)</option>
+                                                        
+                                                            <option value="SZ">+268 (SZ)</option>
+                                                        
+                                                            <option value="SE">+46 (SE)</option>
+                                                        
+                                                            <option value="CH">+41 (CH)</option>
+                                                        
+                                                            <option value="SY">+963 (SY)</option>
+                                                        
+                                                            <option value="TW">+886 (TW)</option>
+                                                        
+                                                            <option value="TJ">+992 (TJ)</option>
+                                                        
+                                                            <option value="TZ">+255 (TZ)</option>
+                                                        
+                                                            <option value="TH">+66 (TH)</option>
+                                                        
+                                                            <option value="TL">+670 (TL)</option>
+                                                        
+                                                            <option value="TG">+228 (TG)</option>
+                                                        
+                                                            <option value="TK">+690 (TK)</option>
+                                                        
+                                                            <option value="TO">+676 (TO)</option>
+                                                        
+                                                            <option value="TT">+1868 (TT)</option>
+                                                        
+                                                            <option value="TN">+216 (TN)</option>
+                                                        
+                                                            <option value="TR">+90 (TR)</option>
+                                                        
+                                                            <option value="TM">+993 (TM)</option>
+                                                        
+                                                            <option value="TC">+1649 (TC)</option>
+                                                        
+                                                            <option value="TV">+688 (TV)</option>
+                                                        
+                                                            <option value="UG">+256 (UG)</option>
+                                                        
+                                                            <option value="UA">+380 (UA)</option>
+                                                        
+                                                            <option value="AE">+971 (AE)</option>
+                                                        
+                                                            <option value="GB">+44 (GB)</option>
+                                                        
+                                                            <option value="US">+1 (US)</option>
+                                                        
+                                                            <option value="UY">+598 (UY)</option>
+                                                        
+                                                            <option value="UZ">+998 (UZ)</option>
+                                                        
+                                                            <option value="VU">+678 (VU)</option>
+                                                        
+                                                            <option value="VA">+379 (VA)</option>
+                                                        
+                                                            <option value="VE">+58 (VE)</option>
+                                                        
+                                                            <option value="VN">+84 (VN)</option>
+                                                        
+                                                            <option value="VG">+1284 (VG)</option>
+                                                        
+                                                            <option value="VI">+1340 (VI)</option>
+                                                        
+                                                            <option value="WF">+681 (WF)</option>
+                                                        
+                                                            <option value="YE">+967 (YE)</option>
+                                                        
+                                                            <option value="ZM">+260 (ZM)</option>
+                                                        
+                                                            <option value="ZW">+263 (ZW)</option>

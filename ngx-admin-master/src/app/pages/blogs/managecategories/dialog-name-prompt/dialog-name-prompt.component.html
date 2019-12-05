@@ -1,0 +1,15 @@
+<nb-card>
+  <nb-card-header>
+    Are you sure?
+    <small style="color: red;text-align: center">
+      Associated Blogs will be inaccessible
+    </small>
+  </nb-card-header>
+
+  <nb-card-footer>
+    <button nbButton status="danget" (click)="delete(false)">Cancel</button>
+    <button nbButton status="success" (click)="delete(true)">
+      Delete
+    </button>
+  </nb-card-footer>
+</nb-card>

@@ -1,0 +1,235 @@
+<!-- <nb-card>
+  <nb-card-header>
+    Appointments
+    <span style="float: right">
+      <i (click)="changeView(3)" class="fas fa-grip-horizontal"></i>
+      <i (click)="changeView(2)" class="fas fa-th-large"></i>
+    </span>
+  </nb-card-header>
+
+  <nb-card-body>
+    <div class="row">
+      <div
+        *ngFor="let app of appointments"
+        [ngClass]="{
+          'col-md-12 col-lg-6 col-xxxl-6': view2,
+          'col-md-6 col-lg-4 col-xxxl-4': view3
+        }"
+      >
+        <nb-card>
+          <nb-card-header [ngStyle]="{ background: statusColor(app) }">
+            Appointment ID : {{ app.appointment_id }}
+            <small style="float: right">{{ app.status | uppercase }}</small>
+          </nb-card-header>
+          <nb-card-body>
+            <table class="table borderless">
+              <tbody>
+                <tr>
+                  <td><h6>Patient Name :</h6></td>
+                  <td>{{ app.patient[0].name }}</td>
+                </tr>
+                <tr>
+                  <td><h6>Phone :</h6></td>
+                  <td>{{ app.patient[0].phone }}</td>
+                </tr>
+                <tr>
+                  <td><h6>Doctor Name :</h6></td>
+                  <td>{{ app.doctor[0].name }}</td>
+                </tr>
+                <tr>
+                  <td><h6>On :</h6></td>
+                  <td>{{ app.day | titlecase }} {{ app.time }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </nb-card-body>
+        </nb-card>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card> -->
+
+<!-- [ngStyle]="{ background: statusColor(app) }" -->
+<div class="row">
+  <div class="col-12">
+    <nb-card>
+      <div>
+        <span style="float: right">
+          <i (click)="changeView(3)" class="fas fa-grip-horizontal"></i>
+          <i (click)="changeView(2)" class="fas fa-th-large"></i>
+        </span>
+      </div>
+      <nb-tabset>
+        <nb-tab tabTitle="All">
+          <div class="row">
+            <div
+              *ngFor="let app of appointments"
+              [ngClass]="{
+                'col-md-12 col-lg-6 col-xxxl-6': view2,
+                'col-md-6 col-lg-4 col-xxxl-4': view3
+              }"
+            >
+              <nb-card>
+                <nb-card-header [ngStyle]="{ background: statusColor(app) }">
+                  Appointment ID : {{ app.appointment_id }}
+                  <small style="float: right">{{
+                    app.status | uppercase
+                  }}</small>
+                </nb-card-header>
+                <nb-card-body>
+                  <table class="table borderless">
+                    <tbody>
+                      <tr>
+                        <td><h6>Patient Name :</h6></td>
+                        <td>{{ app.patient[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Phone :</h6></td>
+                        <td>{{ app.patient[0].phone }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Doctor Name :</h6></td>
+                        <td>{{ app.doctor[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>On :</h6></td>
+                        <td>{{ app.day | titlecase }} {{ app.time }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+              </nb-card>
+            </div>
+          </div>
+        </nb-tab>
+        <nb-tab tabTitle="Tentatively">
+          <div class="row">
+            <div
+              *ngFor="let app of tentatively"
+              [ngClass]="{
+                'col-md-12 col-lg-6 col-xxxl-6': view2,
+                'col-md-6 col-lg-4 col-xxxl-4': view3
+              }"
+            >
+              <nb-card>
+                <nb-card-header [ngStyle]="{ background: statusColor(app) }">
+                  Appointment ID : {{ app.appointment_id }}
+                  <small style="float: right">{{
+                    app.status | uppercase
+                  }}</small>
+                </nb-card-header>
+                <nb-card-body>
+                  <table class="table borderless">
+                    <tbody>
+                      <tr>
+                        <td><h6>Patient Name :</h6></td>
+                        <td>{{ app.patient[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Phone :</h6></td>
+                        <td>{{ app.patient[0].phone }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Doctor Name :</h6></td>
+                        <td>{{ app.doctor[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>On :</h6></td>
+                        <td>{{ app.day | titlecase }} {{ app.time }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+              </nb-card>
+            </div>
+          </div>
+        </nb-tab>
+
+        <nb-tab tabTitle="Confirmed">
+          <div class="row">
+            <div
+              *ngFor="let app of confirmed"
+              [ngClass]="{
+                'col-md-12 col-lg-6 col-xxxl-6': view2,
+                'col-md-6 col-lg-4 col-xxxl-4': view3
+              }"
+            >
+              <nb-card>
+                <nb-card-header [ngStyle]="{ background: statusColor(app) }">
+                  Appointment ID : {{ app.appointment_id }}
+                  <small style="float: right">{{
+                    app.status | uppercase
+                  }}</small>
+                </nb-card-header>
+                <nb-card-body>
+                  <table class="table borderless">
+                    <tbody>
+                      <tr>
+                        <td><h6>Patient Name :</h6></td>
+                        <td>{{ app.patient[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Phone :</h6></td>
+                        <td>{{ app.patient[0].phone }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Doctor Name :</h6></td>
+                        <td>{{ app.doctor[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>On :</h6></td>
+                        <td>{{ app.day | titlecase }} {{ app.time }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+              </nb-card>
+            </div>
+          </div>
+        </nb-tab>
+        <nb-tab tabTitle="Declined">
+          <div class="row">
+            <div
+              *ngFor="let app of rejected"
+              [ngClass]="{
+                'col-md-12 col-lg-6 col-xxxl-6': view2,
+                'col-md-6 col-lg-4 col-xxxl-4': view3
+              }"
+            >
+              <nb-card>
+                <nb-card-header [ngStyle]="{ background: statusColor(app) }">
+                  Appointment ID : {{ app.appointment_id }}
+                  <small style="float: right">{{
+                    app.status | uppercase
+                  }}</small>
+                </nb-card-header>
+                <nb-card-body>
+                  <table class="table borderless">
+                    <tbody>
+                      <tr>
+                        <td><h6>Patient Name :</h6></td>
+                        <td>{{ app.patient[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Phone :</h6></td>
+                        <td>{{ app.patient[0].phone }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>Doctor Name :</h6></td>
+                        <td>{{ app.doctor[0].name }}</td>
+                      </tr>
+                      <tr>
+                        <td><h6>On :</h6></td>
+                        <td>{{ app.day | titlecase }} {{ app.time }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </nb-card-body>
+              </nb-card>
+            </div>
+          </div>
+        </nb-tab>
+      </nb-tabset>
+    </nb-card>
+  </div>
+</div>

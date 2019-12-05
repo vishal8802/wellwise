@@ -1,0 +1,18 @@
+<nb-accordion>
+  <nb-accordion-item *ngFor="let q of ques; let i = index">
+    <nb-accordion-item-header>
+      <b>{{ i + 1 }} . {{ q.question }}</b>
+      <small *ngIf="showMsg" class="ml-5 mr-5">
+        click again to delete
+      </small>
+      <i
+        (click)="startCd(q._id)"
+        style="float: right;color: red"
+        class="fas fa-trash-alt danger mr-5"
+      ></i>
+    </nb-accordion-item-header>
+    <nb-accordion-item-body>
+      {{ q.answer }}
+    </nb-accordion-item-body>
+  </nb-accordion-item>
+</nb-accordion>

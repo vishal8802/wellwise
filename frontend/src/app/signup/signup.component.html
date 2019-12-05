@@ -1,0 +1,91 @@
+<body style="background-color:#f0f8ff;">
+  <div class="signfor">
+    <div class="container bodyContainer" id="logsin" align="center">
+      <div layout="row" layout-align="center center" class="login-panel">
+        <div id="md-card" class="login-wrapper">
+          <ul tabs-wrapper id="horizontal-list">
+            <li class="active">
+              <a routerLink="/login"><strong>Login</strong></a>
+            </li>
+
+            <li>
+              <a><strong>Sign Up</strong></a>
+            </li>
+          </ul>
+          <form>
+            <div class="fields-wrapper">
+              <div layout="row">
+                <span class="form-element">
+                  <input
+                    (keypress)="alphabetOnly($event)"
+                    type="text"
+                    required=""
+                    placeholder="Name"
+                    [(ngModel)]="user.name"
+                    [ngModelOptions]="{ standalone: true }"
+                  />
+                </span>
+                <div flex-sm="30" flex-gt-sm="25" style="width: 30%;">
+                  <span class="form-element filter-dropdown arrow">
+                    <select>
+                      <optgroup>
+                        <option value="AF">+93 (AF)</option>
+                      </optgroup>
+                    </select>
+                  </span>
+                </div>
+                <div flex-sm="70" flex-get-sm="75" style="width: 70%;">
+                  <span class="form-element">
+                    <input
+                      type="text"
+                      (keypress)="numberOnly($event)"
+                      placeholder="Phone"
+                      [(ngModel)]="user.phone"
+                      [ngModelOptions]="{ standalone: true }"
+                    />
+                  </span>
+                </div>
+              </div>
+              <span class="form-element">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  [(ngModel)]="user.password"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </span>
+              <span class="form-element">
+                <input
+                  type="password"
+                  [(ngModel)]="user.repassword"
+                  placeholder="Confirm Password"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </span>
+
+              <span class="form-element">
+                <input
+                  type="text"
+                  placeholder="Email"
+                  [(ngModel)]="user.email"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </span>
+            </div>
+
+            <section layout="column">
+              <button
+                class="md-primary mrgtop"
+                type="submit"
+                (click)="signup(user)"
+                flex
+              >
+                <strong>Sign Up</strong>
+              </button>
+            </section>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

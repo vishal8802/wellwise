@@ -1,0 +1,132 @@
+.container{
+    background-color: #f0f8ff;
+}
+
+.fa-user-circle{
+    color:#21b5cb; 
+}
+
+.fa-plus-circle{
+    color:  #b0d47f;
+}
+
+
+
+.fa-user-circle:hover{
+    color: #b0d47f;
+}
+
+.fa-plus-circle:hover{
+    color: #21b5cb; 
+}
+.fields-wrapper {
+    padding: 16px 20px 0px 20px;
+}
+.btn:hover{
+	background-color:  #b0d47f;
+  color: black;
+}
+.flex-100, .layout-column>.flex-100, .layout-row>.flex-100 {
+    -webkit-flex: 1 1 100%;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+.sect{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2px 2px 26px;
+}
+
+div[layout='row'], div[layout-wrap] {
+    overflow: hidden;
+    clear: both;
+}
+.login-wrapper .fields-wrapper {
+    padding: 16px 20px 0px 20px;
+}
+div[flex-gt-sm], div[flex-sm], div[flex] {
+    float: left;
+}
+
+.form-element {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 0px 1px;
+    margin: 16px 0 27px;
+}
+select {
+    width: 100%;
+}
+optgroup {
+    font-size: 12px !important;
+}
+
+.filter-dropdown:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    background-size: cover;
+    background-position: center;
+    right: 4px;
+    height: 10px;
+    width: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 29px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+ 
+    padding-right: 22px;
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea, select {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    box-shadow: inset 0px -3px 0px -2px rgba(0,0,0,0.12);
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+    color: rgba(0,0,0,0.87);
+    vertical-align: middle;
+    padding: 2px 2px 1px;
+    box-sizing: content-box;
+    transition: all 0.2s ease-out;box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.btn:hover{
+	background-color:  #b0d47f;
+  color: black;
+}
+.modal-header{
+	background-color: #21b5cb;
+}

@@ -1,0 +1,27 @@
+.borderless td,
+.borderless th {
+  border: none;
+}
+
+.table th,
+.table td {
+  padding: 0;
+}
+
+nb-card-body {
+  padding-bottom: 0;
+}
+
+nb-card-header {
+  padding: 0.5rem;
+}
+
+span {
+  i {
+    padding: 0 10px 0 10px;
+  }
+}
+
+h6 {
+  font-size: 0.7877rem;
+}

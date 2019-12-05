@@ -1,0 +1,88 @@
+<div class="ask-question-page__upper-section quespart">
+  <div class="container grid" align="center">
+    <div class="grid__col-10 grid__col-lt-md-20" style=" margin-top: 80px;">
+      <form
+        class="ask-question-page__upper-section__ask-box grid__col-20 grid--direction-column lybShadow--depth-2 lybGutter"
+        align="center"
+      >
+        <div
+          class="lybText--darkest lybText--small lybText--bolder lybMar-top-btm"
+        >
+          Your Question here...
+        </div>
+        <div
+          card=""
+          class="ask-question-page__upper-section__ask-box__textarea lybGutter--half"
+        >
+          <textarea
+            id="askMessage"
+            placeholder="Enter question for you or someone else. For e.g. I am 25 year old male and have backache for last 2 months. I have used pain relief ointment cream for couple of days but haven’t got any relief. What should I do now?"
+            columns="1"
+            rows="5"
+            required="required"
+            [(ngModel)]="question"
+            [ngModelOptions]="{ standalone: true }"
+          ></textarea>
+        </div>
+
+        <div class="lybMar-top-btm">
+          <div class="lybText--small lybText--bolder lybText--darkest">
+            Where should we send secure notifications?
+          </div>
+          <div class="grid__col-20 grid--direction-row grid--wrap">
+            <span class="grid__col-10 grid__col-lt-md-20">
+              <span class="form-element lybMar-top-btm">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Your email address"
+                  required="required"
+                  class="lybMar-no-margin"
+                  aria-label="Enter email address"
+                  [(ngModel)]="email"
+                  [ngModelOptions]="{ standalone: true }"
+                />
+              </span>
+            </span>
+            <span class="grid__col-10 grid__col-lt-md-20 grid--direction-row">
+              <span class="grid__col-6">
+                <span class="form-element filter-dropdown lybMar-top-btm">
+                  <select
+                    name="countryCode"
+                    aria-label="Select your country code"
+                    class="lybMar-no-margin"
+                  >
+                    <optgroup>
+                      <option value="AF">+93 (AF)</option>
+                    </optgroup>
+                  </select>
+                </span>
+              </span>
+              <span class="grid__col-14">
+                <span class="form-element lybMar-top-btm">
+                  <input
+                    name="phone"
+                    [(ngModel)]="phone"
+                    [ngModelOptions]="{ standalone: true }"
+                    required=""
+                    placeholder="Your mobile number"
+                    class="lybMar-no-margin"
+                  />
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <button
+            (click)="details(question, phone, email)"
+            class="primary raised grid__col-20 lybText--medium lybPad-top-btm--quar lybMar-no-margin"
+          >
+            <strong>Submit your Question here</strong>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

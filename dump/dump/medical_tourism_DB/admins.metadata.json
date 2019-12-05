@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"medical_tourism_DB.admins"},{"v":2,"unique":true,"key":{"phone":1},"name":"phone_1","ns":"medical_tourism_DB.admins","background":true}],"uuid":"2755d3961f244f9db50d2bca2ee992c5"}

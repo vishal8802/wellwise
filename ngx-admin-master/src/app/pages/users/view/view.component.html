@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-12">
+    <nb-card>
+      <nb-tabset>
+        <nb-tab tabTitle="Admin">
+          <ng2-smart-table [settings]="settings" [source]="admin">
+          </ng2-smart-table>
+        </nb-tab>
+        <nb-tab tabTitle="End-User">
+          <ng2-smart-table [settings]="settings" [source]="patient">
+          </ng2-smart-table>
+        </nb-tab>
+        <nb-tab tabTitle="Doctor">
+          <ng2-smart-table [settings]="settings" [source]="doctor">
+          </ng2-smart-table>
+        </nb-tab>
+      </nb-tabset>
+    </nb-card>
+  </div>
+</div>
